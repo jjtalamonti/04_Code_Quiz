@@ -75,7 +75,7 @@ nextBtn.addEventListener('click', () => {
 // timer for quiz
 
 function startTimer() {
-    timer = 30;
+    timer = 50;
     var gameTimer = setInterval(() => {
         timer--
         timerText.textContent= "Time Remaining: " + timer;
@@ -160,9 +160,14 @@ function clearStatusClass(element) {
 function endGame() {
     console.log('game over')
     timerText.textContent= "Time Remaining: 0"
-    var intials =prompt("your score: " + score + 
-    "\n Enter Initials")
+    var intials = prompt("Enter Initials")
     var currentScores = JSON.parse(localStorage.getItem())
+    var userObj = {
+        intials,
+        score
+    }
+    currentScores.push(userObj)
+    newLi.text(intials)
 }
 
 
