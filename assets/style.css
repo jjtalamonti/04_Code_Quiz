@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* #game-timer{
+    display: flex;
+    justify-content:flex-end;
+    
+    
+} */
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: rgb(11, 159, 164);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 15px 5px;
+}
+
+.btn-grid {
+    display: grid;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: rgb(3, 46, 120);
+    border: 5px;
+    border-radius: 10px;
+    color:antiquewhite;
+}
+
+.btn:hover {
+    color: rgb(35, 151, 161);
+    background-color: black;
+}
+
+#question {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+
+#begin-btn {
+    font-size: 40px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+#next-btn {
+    font-size: 40px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide {
+    display: none;
+}
